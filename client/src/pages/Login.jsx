@@ -34,7 +34,7 @@ const Login = () => {
  
         try {
          
-          const response = await axios.post('https://blog-page-backend.onrender.com', userData);
+          const response = await axios.post('https://blog-page-backend.onrender.com/api/users/login', userData);
           const user = await response.data;
           setCurrentUser(user)
           navigate('/')
